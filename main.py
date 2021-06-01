@@ -79,7 +79,7 @@
 #     elif (p2_num == 21):
 #         print("Player 2 wins!")
 
-from cCard import Card
+from Card import Card
         
 
 card_1 = Card("1", "Spades")
