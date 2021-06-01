@@ -1,43 +1,24 @@
-# class Card:
-#     def __init__(self, suit, value):
-#         self.suit = suit
-#         self.value = value
-
-        
-# class Deck:
-#     def __init__(self):
-        
-# class Player:
-#     def __init__(self):
-
-
 # Blackjack Rules
 # 2 cards
-# Goal: Get closest value to 21 without going over. 
+# Goal: Get closest value to 21 without going over.
 # Go over 22 and you lose.
 # Suit cards are all 10. Ace is 1 (for simplicity)
 
-import random as random # random library in python uses Mersenne Twister randomizer
+import random as random  # random library in python uses Mersenne Twister randomizer
 # https://docs.python.org/3/library/random.html#:~:text=Python%20uses%20the%20Mersenne%20Twister,random%20number%20generators%20in%20existence.
 
-
-deck = [1,2,3,4,5,6,7,8,9,10]
-# lfsr = 0xACE1u
-
-# bit  = ((lfsr >> 0) ^ (lfsr >> 2) ^ (lfsr >> 3) ^ (lfsr >> 5) ) & 1;
-# return lfsr =  (lfsr >> 1) | (bit << 15);
-
+deck = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # Player values
 player1 = 0
 player2 = 0
 
 # while (player1 <= 21 and player2 <= 21):
-    
-p1_input = False;
-p2_input = False;
-p1_num = 0;
-p2_num = 0;
+
+p1_input = False
+p2_input = False
+p1_num = 0
+p2_num = 0
 
 while (p1_num <= 21 and p2_num <= 21):
 
@@ -65,9 +46,7 @@ while (p1_num <= 21 and p2_num <= 21):
         break
 
     # Print out current scores
-    print("P1: ", p1_num, " " , "P2: ", p2_num)
-    
-
+    print("P1: ", p1_num, " ", "P2: ", p2_num)
 
     # Get value for Player 2
     p2_input = input("Would you like to hit (Y) or stay? (N) ")
@@ -86,7 +65,7 @@ while (p1_num <= 21 and p2_num <= 21):
         break
 
     # Print out current scores
-    print("P1: ", p1_num, " " , "P2: ", p2_num)
+    print("P1: ", p1_num, " ", "P2: ", p2_num)
 
     # Check winners
     if (p1_num == 21 and p2_num == 21):
@@ -96,5 +75,3 @@ while (p1_num <= 21 and p2_num <= 21):
         print("Player 1 wins!")
     elif (p2_num == 21):
         print("Player 2 wins!")
-        
-
