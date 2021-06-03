@@ -1,2 +1,2 @@
-# class Player:
-#     def __init__(self):
+class Player:
+    def __init__(self):

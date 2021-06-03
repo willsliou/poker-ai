@@ -5,7 +5,8 @@ class Card:
     Rank: Int 1-13
     # clubs (♣), diamonds (♦), hearts (♥), and spades (♠)
     """
-    suit_names = ["♣", "♦", "♥", "♠"]
+    # suit_names = ["♣", "♦", "♥", "♠"]
+    suit_names = ["1", "2", "3", "4"]
     value_names = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
 
 
@@ -20,3 +21,11 @@ class Card:
     # String representation
     def __repr__(self):
             return "Card(%s, %s)" % (self.value, self.suit)
+
+
+    # Getter functions
+    def get_suit(self):
+        return self.suit
+
+    def get_value(self):
+        return self.value
